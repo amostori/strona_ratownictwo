@@ -173,6 +173,11 @@
 
 
 
+
+
+
+
+
             </script>
 
             <h2>Przetestuj aplikację</h2>
@@ -181,7 +186,9 @@
                     <button class='btn btn-default'>Generuj przypadek testowy</button>
                 </a></li>
             </ul>
-            <span id=result>{{new_call}}</span>
+            <p id=life_functions>{{new_call["life_functions"]}}</p>
+            <p id=sample>{{new_call["sample"]}}</p>
+            <p id=exam>{{new_call["exam"]}}</p>
 
         </div>
 
@@ -356,11 +363,18 @@
             e.preventDefault()
             $.getJSON('/background_process_test',
                 function(data) {
-                $("#result").text(data.new_call);
+                $("#life_functions").text(data.new_call["life_functions"]);
+                $("#sample").text(data.new_call["sample"]);
+                $("#exam").text(data.new_call["exam"]);
             });
             return false;
           });
         });
+
+
+
+
+
 
 </script>
 

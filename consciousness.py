@@ -6,5 +6,7 @@ class Consciousness:
         self.consciousness = self.get_consciousness()
 
     def get_consciousness(self):
-        consciousness_list = ["Przytomne", "Reaguje na głos", "Reaguje na ból", "Nieprzytomne"]
+        consciousness_list = ["przytomne", "przytomne", "przytomne", "podsypiające", "podsypiające", "podsypiające",
+                              "reaguje na głos", "reaguje na ból",
+                              "nieprzytomne"]
         return choice(consciousness_list)

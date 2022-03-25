@@ -21,4 +21,4 @@ class Ecg:
             ekg = choice(blok_list)
         else:
             ekg = "rytm_zatokowy"
-        return f"Zapis ekg: {ekg}"
+        return f"zapis ekg: {ekg}"

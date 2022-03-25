@@ -2,18 +2,25 @@ from random import randint, choice
 
 exam_head_list = [
     "uraz głowy", "nierówne źrenice", "asymetria twarzy", "ślinotok", "niewyraźna mowa", "sztywność karku",
-    "oczy szopa", "zasinienie za uszami", "","","","","",]
-exam_chest_list = ["świsty", "trzeszczenia nad płucami", "szmer pęcherzykowy","szmer pęcherzykowy","szmer pęcherzykowy","szmer pęcherzykowy", "szmer pęcherzykowy",
+    "oczy szopa", "zasinienie za uszami", "głowa bez zmian", "głowa bez zmian", "głowa bez zmian", "głowa bez zmian",
+    "głowa bez zmian", "głowa bez zmian", ]
+exam_chest_list = ["świsty", "trzeszczenia nad płucami", "szmer pęcherzykowy", "szmer pęcherzykowy",
+                   "szmer pęcherzykowy", "szmer pęcherzykowy", "szmer pęcherzykowy",
                    "szmer pęcherzykowy", "brak szmeru", "furczenia", "zasinienie w okolicy klatki piersiowej"]
-exam_stomach_list = ["zasinienie brzucha", "", "", "","", "", "","", "", "","", "", "",
-                     "",
+exam_stomach_list = ["zasinienie brzucha", "brzuch bez zmian", "brzuch bez zmian", "brzuch bez zmian",
+                     "brzuch bez zmian", "brzuch bez zmian", "brzuch bez zmian", "brzuch bez zmian", "brzuch bez zmian",
+                     "brzuch bez zmian", "brzuch bez zmian", "brzuch bez zmian",
                      "brak perystaltyki", "bolesny, tkliwy brzuch", "brzuch deskowaty"]
-exam_croch_list = ["", "", "","","","",
-                   "", "nieblędnąca wysypka w okolicy krocza"]
+exam_croch_list = ["krocze bez zmian", "krocze bez zmian",
+                   "krocze bez zmian", "krocze bez zmian", "krocze bez zmian", "krocze bez zmian", "krocze bez zmian",
+                   "krocze bez zmian", "krocze bez zmian",
+                   "nieblędnąca wysypka w okolicy krocza"]
 exam_extremites_list = ["uraz uda lewego", "uraz uda prawego", "uraz obu kości udowych",
                         "uraz kości ramiennej prawej",
-                        "uraz obu rąk", "", "", "","", "", "","", "", "","", "", "","", "", "","", "", "",
-                        "", ]
+                        "uraz obu rąk", "kończyny bez zmian", "kończyny bez zmian", "kończyny bez zmian",
+                        "kończyny bez zmian", "kończyny bez zmian", "kończyny bez zmian", "kończyny bez zmian",
+                        "kończyny bez zmian", "kończyny bez zmian", "kończyny bez zmian", "kończyny bez zmian",
+                        "kończyny bez zmian", ]
 
 
 class Exam:
@@ -27,4 +34,4 @@ class Exam:
         exam_stomach = choice(exam_stomach_list)
         exam_croch = choice(exam_croch_list)
         exam_extremites = choice(exam_extremites_list)
-        return f"Objawy badania przedmiotowego: {exam_head}, {exam_chest}, {exam_stomach}, {exam_croch}, {exam_extremites}"
+        return f"\nObjawy badania przedmiotowego: {exam_head}, {exam_chest}, {exam_stomach}, {exam_croch}, {exam_extremites}"

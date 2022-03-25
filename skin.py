@@ -7,4 +7,4 @@ skin_list = ["normalna", "wilgotna, sina", "marmurkowa", "różowa", "sinica cen
 class Skin:
 
     def __init__(self):
-        self.skin = f"Skóra: {choice(skin_list)}"
+        self.skin = f"skóra: {choice(skin_list)}"
