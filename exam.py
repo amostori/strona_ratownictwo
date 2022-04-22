@@ -1,6 +1,6 @@
 from random import randint, choice
 
-exam_glucose = randint(20, 100)
+exam_glucose = randint(20, 80)
 exam_head_list = [
     "uraz głowy", "nierówne źrenice", "asymetria twarzy", "ślinotok", "niewyraźna mowa", "sztywność karku",
     "oczy szopa", "zasinienie za uszami", "głowa bez zmian", "głowa bez zmian", "głowa bez zmian", "głowa bez zmian",
