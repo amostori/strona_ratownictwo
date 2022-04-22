@@ -1,6 +1,5 @@
 from random import randint, choice
 
-exam_glucose = randint(30, 80)
 exam_head_list = [
     "uraz głowy", "nierówne źrenice", "asymetria twarzy", "ślinotok", "niewyraźna mowa", "sztywność karku",
     "oczy szopa", "zasinienie za uszami", "głowa bez zmian", "głowa bez zmian", "głowa bez zmian", "głowa bez zmian",
@@ -35,4 +34,4 @@ class Exam:
         exam_stomach = choice(exam_stomach_list)
         exam_croch = choice(exam_croch_list)
         exam_extremites = choice(exam_extremites_list)
-        return f"\nObjawy badania przedmiotowego: glukoza {exam_glucose} mg/dl, {exam_head}, {exam_chest}, {exam_stomach}, {exam_croch}, {exam_extremites}"
+        return f"\nObjawy badania przedmiotowego: glukoza {randint(30, 80)} mg/dl, {exam_head}, {exam_chest}, {exam_stomach}, {exam_croch}, {exam_extremites}"
